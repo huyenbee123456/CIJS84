@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <h1> Hello </h1>
+    <div id ="container" style="display: flex; flex-direction: column;"></div>
+    <!-- <script>
+        const pList=20;
+        const dom = this.document
+        let containerElement = dom.getElementById("container")
+        for (let i=0; i<pList; i++) {
+            let pElement = dom.createElement("span");
+            pElement.innerHTML = "Sản phẩm số: " + i;
+            containerElement.appendChild(pElement);
+        }
+    </script> -->
+
+    <script type="text/babel">
+        // let e1 = this.document.createElement("a")
+        let hello = <h1>React in HTML</h1>
+        ReactDOM.render (hello, document.getElementById("container"))
+    </script>
+</body>
+</html>
