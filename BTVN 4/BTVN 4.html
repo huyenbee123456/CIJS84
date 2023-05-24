@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .traffic-light {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            
+        }
+
+        .light {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px;
+            border-color: black;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        button {
+            margin: 0 auto;
+            text-align: center;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+
+    <button id="changeBtn">Next</button>
+
+    <div class="traffic-light">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+    </div>
+
+    <script>
+        const lights = document.querySelectorAll('.light');
+        const changeBtn = document.querySelector('#changeBtn');
+        let currentLight = 0;
+
+        function changeLight() {
+            lights[currentLight].className = 'light';
+            currentLight++;
+
+            if (currentLight > 2) {
+                currentLight = 0;
+            }
+
+            const nextLight = lights[currentLight];
+            nextLight.classList.add(nextLight.getAttribute('data-color'));
+        }
+
+        changeBtn.addEventListener('click', changeLight);
+    </script>
+</body>
+
+
+</html>
