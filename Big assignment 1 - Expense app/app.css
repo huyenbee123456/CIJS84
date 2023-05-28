@@ -1,0 +1,193 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: auto auto;
+  gap: 10px;
+  position: relative;
+  width: 799px;
+  height: 100px;
+  background: #897BDA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.addExpense {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+  width: 227px;
+  height: 44px;
+  background: #862796;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.cards {
+  width: 799px;
+  height: 853px;
+  background: #1A1A1A;
+  border-radius: 12px;
+}
+
+.filterByYear {
+  padding: 0px;
+  gap: 10px;
+  width: 739px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.chart {
+  display: flex;
+  /* flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; */
+  padding: 10px 20px;
+  width: 739px;
+  height: 198px;
+  background: #E1CAE4;
+  border-radius: 12px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-bottom: 20px
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 700px
+
+}
+
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  
+}
+
+.bar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: 21px;
+  height: 139px;
+  background: #BAA5ED;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.inner-bar {
+  width: 21px;
+  height: 105px;
+  border-radius: 50px;
+  background: #3D15A9;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: bold;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.monthExpense {
+  border-collapse: separate;
+  border-spacing: 0 50px;
+  position: relative;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+.month {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 739px;
+  height: 134px;
+  background: #575757;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.date {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 114px;
+  height: 114px;
+  background: #1A1A1A;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  flex: none;
+  color: #FFFFFF;
+}
+
+.expense {
+  width: 517px;
+  height: 42px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+
+.money {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 68px;
+  height: 48px;
+  background: #862796;
+  border: 1px solid #FFFFFF;
+  border-radius: 12px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
